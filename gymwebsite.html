@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Terminator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Otomanopee One', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(img/gym.jpg);
+            background-size: 100%;
+        }
+
+        .left {
+            position: absolute;
+            left: 45px;
+            top: 10px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 84px;
+            filter: invert();
+        }
+
+        .left div {
+            text-align: left;
+            line-height: 6px;
+            font-size: 15px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 30px;
+            display: inline-block;
+            /* border: 2px solid blue; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .btn {
+            font-family: 'Otomanopee One', cursive;
+            margin: 3px 10px;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgba(218, 195, 195, 0.623);
+        }
+
+        .container {
+            float: right;
+            border: 2px solid white;
+            margin: 120px 80px;
+            padding: 65px 50px;
+            width: 500px;
+            border-radius: 5px;
+        }
+
+        .form-group input {
+            display: block;
+            width: 465px;
+            margin: 10px 10px;
+            padding: 6px 6px;
+            border: 3px solid black;
+            border-radius: 2px;
+            text-align: center;
+            font-family: 'Otomanopee One', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 93%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/gym.png" alt="" class="src">
+            <div>Terminator</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name=" " id=" " placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " id=" " placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " id=" " placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " id=" " placeholder="Enter Your City">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
